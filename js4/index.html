@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let income=parseInt(prompt("enter the value"));
+        if(income<=250000){
+            console.log("No Tax")
+        }
+        else if(income>250000 && income<=500000){
+            let remain=income-250000;
+            let remain1=remain*0.05;
+            console.log(remain1);
+        }
+        else if(income>500000 && income<=1000000){
+            let remain2=income-500000 ;
+            let remain3=(remain2*0.2)+12500;
+            console.log(remain3);
+        }
+        else if( income>1000000){
+            let remain4=remain-1000000;
+            let remain5=(remain4*0.3)+112500;
+            console.log(remain5)
+        }
+
+
+
+
+
+        const weight=parseInt(prompt("enter the weight"));
+        let destination=prompt("enter the destination(local,national,international)");
+        let cost=0;
+        if(weight<=1){
+            if(destination=="local"){
+               cost=5;
+            }
+            else if(destination=="national"){
+               cost=8;
+            }
+            else if(destination=="International"){
+               cost=15;
+            }
+        }
+        else if(weight>1 && weight<=5){
+            if(destination=="local"){
+               cost=10;
+            }
+            else if(destination=="national"){
+               cost=15;
+            }
+            else if(destination=="International"){
+               cost=30;
+            }
+        }
+        else if(weight>5 && weight<=10){
+            if(destination=="local"){
+               cost=20;
+            }
+            else if(destination=="national"){
+               cost=25;
+            }
+            else if(destination=="International"){
+               cost=50;
+            }
+        }
+        else if(weight>10){
+            if(destination=="local"){
+               cost=30;
+            }
+            else if(destination=="national"){
+               cost=35;
+            }
+            else if(destination=="International"){
+               cost=70;
+            }
+        }
+        console.log(cost);
+
+      let unitsconsumed=parseFloat(prompt("enter a value"));
+      let bill=0;
+      if(unitsconsumed<=100){
+         bill=unitsconsumed*1;
+      }
+      else if(unitsconsumed>100 && unitsconsumed<=300){
+         bill=(100*1)+(unitsconsumed-100)*1.5;
+      }
+      else(unitsconsumed>300);{
+         bill=(100*1)+ (200*1.5)+(unitsconsumed-300)*2;
+      }
+      console.log(bill);
+
+    </script>
+</body>
+</html>
